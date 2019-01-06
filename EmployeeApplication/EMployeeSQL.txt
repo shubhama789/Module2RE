@@ -1,0 +1,34 @@
+CREATE TABLE EmployeeBean(
+	empId VARCHAR2(5),
+	empName VARCHAR2(20),
+	phoneNumber VARCHAR2(10),
+	designation VARCHAR2(20),
+	hiredate Date,
+	salary NUMBER(7,2),
+	address VARCHAR2(20),
+	projectId VARCHAR2(5)
+)
+
+CREATE sequence empid_sequence start with 100
+
+CREATE TABLE ProjectBean(
+	projectId VARCHAR2(5),
+	projectName VARCHAR2(20),
+	location VARCHAR2(20),
+	projectStartDate DATE,
+	projectEndDate DATE,
+	no_of_emp NUMBER(2)
+)
+
+CREATE sequence projectid_sequence start with 100
+/
+
+CREATE TABLE ADMIN(
+USERNAME VARCHAR2(10),
+PASSWORD VARCHAR2(10) NOT NULL,
+Constraint user_name PRIMARY KEY(USERNAME)
+)
+
+insert into admin values('subham','agarwal')
+
+
